@@ -1,0 +1,22 @@
+{% extends "base_generic.html" %}
+
+{% block content %}
+<h1 class="ejemplo">Urban S.A.</h1>
+    <p>Bienvenido a <em>Urban S.A.</em></p>
+
+<h2>Nuestros departamentos</h2>
+<p>Ofrecemos viviendas para la comodidad y el deseo de cada uno de nuestros clientes de tener su propio hogar.</p>
+
+<div>
+{% load static %}
+<img src="{% static 'images/departamento.jpg' %}" 
+style="width:624px;height:341px;"/>
+</div>
+
+<h2>Cantidad de clientes y departamentos:</h2>
+    <p>Información respectiva a la cantidad de clientes y departamentos existentes:</p>
+    <ul>
+        <li><strong>Clientes:</strong> {{ num_clientes }}</li>
+        <li><strong>Departamentos:</strong> {{ num_departamentos }}</li>
+    </ul>
+{% endblock %}
