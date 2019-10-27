@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="zxx">
+<head>
+	<title>URBAN S.A.</title>
+	<meta charset="UTF-8">
+	<meta name="description" content="Real estate html template">
+	<meta name="keywords" content="real estate, html">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	
+	<!-- Favicon -->
+	<link href="img/home.png" rel="shortcut icon"/>
+
+	<!-- Google font -->
+	<link href="https://fonts.googleapis.com/css?family=Sarabun:300,300i,400,400i,500,500i,600,600i,700,700i&display=swap" rel="stylesheet">
+
+	<!-- Stylesheets -->
+	<link rel="stylesheet" href="css/bootstrap.min.css"/>
+	<link rel="stylesheet" href="css/font-awesome.min.css"/>
+	<link rel="stylesheet" href="css/flaticon.css"/>
+	<link rel="stylesheet" href="css/magnific-popup.css"/>
+	<link rel="stylesheet" href="css/owl.carousel.min.css"/>
+
+	<!-- Main Stylesheets -->
+	<link rel="stylesheet" href="css/style.css"/>
+
+
+	<!--[if lt IE 9]>
+		<script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+		<script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+	<![endif]-->
+
+</head>
+<body onload="HoraMensaje()">
+	<!-- Page Preloder -->
+	<div id="preloder">
+		<div class="loader"></div>
+	</div>
+	
+	<!-- Header section -->
+	<header class="header-section">
+		<!-- logo -->
+		<a href="index.html" class="site-logo">
+			<img src="img/logoURBAN.png" alt="">
+		</a>
+		<div class="nav-switch">
+			<i class="fa fa-bars"></i>
+		</div>
+		<div class="container">
+			<ul class="main-menu">
+				<li><a href="index.html">Inicio</a></li>
+				<li><a href="about.html">Sobre Nosotros</a></li>
+				<li><a href="contact.html">Contáctanos</a></li>
+			</ul>
+		</div>
+	</header>
+	<!-- Header section end -->
+	
+	<!-- Page top section -->
+	<section class="page-top-section set-bg" data-setbg="img/page-top-bg/4.jpg">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-5">
+					<div class="page-top-text text-white">
+						<h2>Contáctanos</h2>
+						<p>Visita nuestras oficinas o envíanos un correo.<br>
+							Atendemos de Lunes a Sábado de las 10:00 a las 19:00 hrs.
+						</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- Page top section end -->
+
+	<!-- Contactar-->
+	<section class="contact-section">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-7 offset-lg-3">
+					<div class="contact-info-box">
+						<h5 class="contact-title">SALA DE VENTAS</h5>
+						<div class="contact-info">
+							<div class="ci-item">
+								<img src="img/icons/location.png" class="ci-icon" alt="">
+								<p>Av. Esquina Blanca 501, Maipú, Región Metropolitana</p>
+							</div>
+							<div class="ci-item">
+								<img src="img/icons/headphone.png" class="ci-icon" alt="">
+								<p>600 594 9494<br>600 600 2322</p>
+							</div>
+						</div>
+						<h5 class="contact-title">Escribenos tu duda o consulta.<br> Te responderemos a la brevedad.</h5>
+						<form class="contact-form" name="datosContacto" method="post" action="envia.html">
+							<div class="form-field">
+								<img src="img/icons/usuario.png" alt="" >
+								<input id="nombre" type="text" placeholder="Nombre completo" required autofocus>
+							</div>
+							<div class="form-field">
+								<img src="img/icons/rut.png" alt="" >
+								<input id="rut" type="text" pattern="[0-9]{2}.[0-9]{3}.[0-9]{3}-[0-9Kk]{1}" placeholder="Rut. Ej: 12.345.678-k" required>
+							</div>
+							<div class="form-field">
+								<img src="img/icons/numero.jpg" alt="" >
+								<input id="numero" type="tel" pattern="9[0-9]{8}" placeholder="Número celular. Ej: 911223344" required>
+							</div>
+							<div class="form-field">
+								<img src="img/icons/correo.png" alt="" >
+								<input id="correo" type="email" placeholder="Correo electrónico" required>
+							</div>
+							<div class="form-field">
+								<img src="img/icons/mensaje.jpg" alt="" >
+								<textarea id="mensaje" placeholder="Mensaje..." required></textarea>
+							</div>
+							<button id="enviar" type="submit" onmouseover="Destacar()" class="site-btn">Enviar</button>
+							<button id="limpiar" type="button" onmouseover="Destacar()" onclick="ConfirmarLimpiarContacto()" class="site-btn-limpiar">Limpiar</button>
+						</form>
+						<div class="div-mapa">
+							<button class="boton-mapa" onmouseover="Destacar()" id="mostrarocultar">Mostrar / Ocultar mapa</button>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- Fin contactar-->
+	<!-- Mapa -->	
+	
+	<section class="section-map" id="mapa">
+		<div class="map">
+			<iframe src="https://www.google.com/maps/embed/v1/place?q=place_id:ChIJAbnQAM7cYpYRXmrcZLmZsvo&key=AIzaSyDqVUrexZ4Rjwlro_LY6vBtDDTMPkBv_hg" style="border:0"></iframe>
+		</div>
+	</section>
+	<!-- Footer section -->
+	<footer class="footer-section">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-5 col-md-2 col-sm-12">
+					<div class="footer-widget">
+						<img src="img/logoURBAN.png" alt="">
+					</div>
+				</div>
+				<div class="col-lg-2 col-md-3 col-sm-4">
+					<div class="footer-widget">
+						<h5>URBAN S.A.</h5>
+						<ul>
+							<li><a href="index.html">Inicio</a></li>
+							<li><a href="about.html">Sobre Nosotros</a></li>
+							<li><a href="contact.html">Contáctanos</a></li>
+						</ul>
+					</div>
+				</div>
+				<div class="col-lg-2 col-md-3 col-sm-4">
+					<div class="footer-widget">
+						<h5>TELÉFONO</h5>
+						<p class="footer-p">600 594 9494</p>
+						<p class="footer-p">600 600 2322</p>
+					</div>
+				</div>
+				<div class="col-lg-3 col-md-3 col-sm-4">
+						<div class="footer-widget">
+							<h5>DIRECCIÓN</h5>
+							<p class="footer-p">Av. Esq Blanca 501, Maipú, Región Metropolitana</p>
+							<p class="footer-p-oscuro">*Atendemos de Lunes a Sábado de las 10:00 a las 19:00 hrs.*</p>
+						</div>
+					</div>
+			</div>
+			<div class="copyright">
+				Copyright &copy;<script>document.write(new Date().getFullYear());</script> Todos los derechos reservados.
+			</div>
+		</div>
+	</footer>
+<!-- Footer section end-->
+	
+	<!--====== Javascripts & Jquery ======-->
+	<script src="js/jquery-3.2.1.min.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+	<script src="js/owl.carousel.min.js"></script>
+	<script src="js/jquery.magnific-popup.min.js"></script>
+	<script src="js/main.js"></script>
+	<script src="js/funciones.js"></script>
+
+	</body>
+</html>

@@ -1,22 +1,244 @@
-{% extends "base_generic.html" %}
+{% extends 'base_generic.html' %}
 
 {% block content %}
-<h1 class="ejemplo">Urban S.A.</h1>
-    <p>Bienvenido a <em>Urban S.A.</em></p>
+<!-- Hero section -->
+<section class="hero-section">
+    <div class="hero-slider owl-carousel owl-theme">
+        {% load static %}
+        <div class="hs-item set-bg" data-setbg="{% static 'images/slider/depa1.jpg' %}">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xl-6 col-lg-7 tituloSlider">
+                        <h1>Eco Encalada</h1>
+                    </div>
+                </div>
+            </div>
+        </div>
+        {% load static %}
+        <div class="hs-item set-bg" data-setbg="{% static 'images/slider/depa22.jpg' %}">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xl-6 col-lg-7 tituloSlider">
+                        <h1>CoLife</h1>
+                    </div>
+                </div>
+            </div>
+        </div>
+        {% load static %}
+        <div class="hs-item set-bg" data-setbg="{% static 'images/slider/depa3.jpg' %}">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xl-6 col-lg-7 tituloSlider">
+                        <h1>Eco Arauco</h1>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Hero details slider -->
+    <div class="hero-nav-slider-warp">
+        <div class="container">
+            {% load static %}
+            <div class="hero-nav-slider owl-carousel">
+                <div class="hns-item">
+                    <h5>2 dormitorios con 2 baños + Lounge tv, gimnasio y piscina con sala de primeros auxilios.</h5>
+                    <p>Almirante Blanco Encalada 2521, Santiago</p>
+                    <span>Valor: UF 2.830,00</span>
+                </div>
+                <div class="hns-item">
+                    <h5>2 dormitorios con 2 baños + bicicletero.</h5>
+                    <p>General Jofré 220, Santiago, Metropolitana</p>
+                    <span>Valor: UF 2.218,00 </span>
+                </div>
+                <div class="hns-item">
+                    <h5>2 dormitorios con 1 baño + fitness, lounge interior, salón de lectura, centro de lavado y más.</h5>
+                    <p>San Diego 2044, Santiago, Metropolitana</p>
+                    <span>Valor: UF 2.415,00</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- Hero section end -->
 
-<h2>Nuestros departamentos</h2>
-<p>Ofrecemos viviendas para la comodidad y el deseo de cada uno de nuestros clientes de tener su propio hogar.</p>
-
-<div>
-{% load static %}
-<img src="{% static 'images/departamento.jpg' %}" 
-style="width:624px;height:341px;"/>
+<!-- features icons section -->
+<div class="features-icons-section">
+    <div class="features-icon-item">
+        <i class="flaticon-151-banker"></i>
+        <p>Fácil compra.</p>
+    </div>
+    <div class="features-icon-item">
+        <i class="flaticon-151-closing"></i>
+        <p>Fácil acceso.</p>
+    </div>
+    <div class="features-icon-item">
+        <i class="flaticon-151-maps-and-flags-3"></i>
+        <p>Buena ubicación.</p>
+    </div>
+    <div class="features-icon-item">
+        <i class="flaticon-151-indoor"></i>
+        <p>Diseño moderno.</p>
+    </div>
+    <div class="features-icon-item">
+        <i class="flaticon-151-maps-and-flags-1"></i>
+        <p>Espacios para aparcar.</p>
+    </div>
+    <div class="features-icon-item">
+        <i class="flaticon-151-transportation"></i>
+        <p>Garage incluido.</p>
+    </div>
+    <div class="features-icon-item">
+        <i class="flaticon-151-reading-glasses"></i>
+        <p>Puntos de recreación cercanos.</p>
+    </div>
 </div>
+<!-- features icons section end-->
 
-<h2>Cantidad de clientes y departamentos:</h2>
-    <p>Información respectiva a la cantidad de clientes y departamentos existentes:</p>
-    <ul>
-        <li><strong>Clientes:</strong> {{ num_clientes }}</li>
-        <li><strong>Departamentos:</strong> {{ num_departamentos }}</li>
-    </ul>
+<!-- Intro section -->
+<section class="intro-section">
+    <div class="container">
+        <div class="section-title">
+            <h2>Nuestros proyectos</h2>
+        </div>
+        <div class="row">
+            <div class="col-lg-8">
+                <div class="intro-img-box">
+                    <h4>Eco Encalada</h4>
+                    {% load static %}
+                    <img src="{% static 'images/intro/depa1.jpg' %}" alt="">
+                </div>
+            </div>
+            <div class="col-lg-4 align-items-end d-flex">
+                <div class="intro-text-box">
+                    <p> Ubicado frente al histórico Club Hípico, el nuevo edificio Eco Encalada se encuentra en un sector privilegiado de la comuna de Santiago Centro, con excelente conectividad, cercano a autopistas, Metro, colegios, universidades, supermercados, Carabineros, áreas verdes y lugares emblemáticos de la ciudad, como el Parque O´Higgins. 
+
+                        De 9 pisos, con acceso desde avenida Blanco Encalada y calle Domeyko, cuenta con espacios comunes de primer nivel y paisajismo en sus zonas exteriores para disfrutar junto a la familia y amigos. </p>
+                    <a href="{% url 'EcoEncalada' %}" class="site-btn" target="_blank">Más Información</a>
+                </div>
+            </div>
+                <div class="col-lg-8">
+                    <div class="intro-img-box">
+                        <h4>CoLife</h4>
+                        {% load static %}
+                        <img src="{% static 'images/intro/depa22.jpg' %}" alt="">
+                    </div>
+                </div>
+            <div class="col-lg-4 align-items-end d-flex">
+                <div class="intro-text-box">
+                    <p>CoLife se encuentra en una inmejorable ubicación de Santiago, a pocos pasos del Metro y del parque Bustamante. Aprovecha su excelente conectividad en un barrio lleno de vida.
+
+                        Con solo 9 pisos, este proyecto te entrega departamentos diseñados especialmente para ti. Cuenta además con un nuevo e innovador concepto en lugares comunes, con distintos espacios que podrás disfrutar de manera única; sala co-working, sala co-break, salón lounge gourmet.</p>
+                    <a href="{% url 'colife' %}" class="site-btn" target="_blank">Más Información</a>
+                </div>
+            </div>
+            <div class="col-lg-8">
+                <div class="intro-img-box">
+                    <h4>Eco Arauco</h4>
+                    {% load static %}
+                    <img src="{% static 'images/intro/depa3.jpg' %}" alt="">
+                </div>
+            </div>
+        <div class="col-lg-4 align-items-end d-flex">
+            <div class="intro-text-box">
+                <p>Ubicado en el histórico Barrio Franklin y a pasos del reconocido persa Bío-Bío, Eco Arauco es el lugar ideal para vivir en la ciudad. Perfectamente conectado, en sus alrededores encontrarás locales comerciales de todo tipo, restaurantes y una amplia gama de servicios.
+
+                    Disfruta de momentos únicos compartiendo en sus exclusivos espacios y espectacular diseño creados por reconocidos diseñadores chilenos, para que tu hogar sea una experiencia única siempre. 
+                </p>
+                <a href="{% url 'ecoarauco' %}" class="site-btn" target="_blank">Más Información</a>
+            </div>
+        </div>
+        </div>
+    </div>		
+</section>
+<!-- Intro section end-->
+
+<!-- Design section end-->
+<section class="design-section">
+    <div class="container">
+        <div class="section-title st-light">
+            <h2>Vista de interiores</h2>
+        </div>
+    </div>
+    <div class="design-slider owl-carousel">
+        {% load static %}
+        <a href="{% static 'images/design/1.jpg' %}" class="img-popup-gallery">
+            {% load static %}
+            <img src="{% static 'images/design/1.jpg' %}" alt="">
+            <i class="flaticon-151-reading-glasses"></i>
+        </a>
+        {% load static %}
+        <a href="{% static 'images/design/2.jpg' %}" class="img-popup-gallery">
+            {% load static %}
+            <img src="{% static 'images/design/2.jpg' %}" alt="">
+            <i class="flaticon-151-reading-glasses"></i>
+        </a>
+        {% load static %}
+        <a href="{% static 'images/design/3.jpg' %}" class="img-popup-gallery">
+            {% load static %}
+            <img src="{% static 'images/design/3.jpg' %}" alt="">
+            <i class="flaticon-151-reading-glasses"></i>
+        </a>
+        {% load static %}
+        <a href="{% static 'images/design/4.jpg' %}" class="img-popup-gallery">
+            {% load static %}
+            <img src="{% static 'images/design/4.jpg' %}" alt="">
+            <i class="flaticon-151-reading-glasses"></i>
+        </a>
+    </div>
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-6">
+                <div class="design-text text-white">
+                    <h4>INTERIOR </h4>
+                    <p>En cada uno de los departamentos se encuentran diseños modernos al momento de decorar, siendo estilos novedosos y originales para cada gusto.</p>
+                </div>
+            </div>
+            <div class="col-lg-6">
+                <div class="design-text text-white">
+                    <h4>FAVORABLE AL MEDIO AMBIENTE</h4>
+                    <p>Los departamentos cuentan con materiales y tecnicas tecnológias Eco-Friendly.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- Design section end-->
+
+
+<!-- Features section -->
+<section class="features-section">
+    <div class="container">
+        <div class="section-title">
+            <h2>CARACTERÍSTICAS</h2>
+        </div>
+    </div>
+    <div class="features-slider owl-carousel">
+        <div class="feature-box">
+            <i class="flaticon-151-banker"></i>
+            <h5>ECO-FRIENDLY HOME</h5>
+            <p>Somos una empresa de construcciones de viviendas ecológicas que actuan acorde a la serie de innovaciones de la actualidad.</p>
+        </div>		
+        <div class="feature-box">
+            <i class="flaticon-151-security-system"></i>
+            <h5>ÁREA SEGURA</h5>
+            <p>Los departamentos se encuentran en zonas urbanas seguras para cualquier tipo de actividad.</p>
+        </div>		
+        <div class="feature-box">
+            <i class="flaticon-151-maps-and-flags-1"></i>
+            <h5>ESTACIONAMIENTO</h5>
+            <p>Todos los edificios cuentan con estacionamiento.</p>
+        </div>		
+        <div class="feature-box">
+            <i class="flaticon-151-step-ladder"></i>
+            <h5>PISCINA COMUNITARIA</h5>
+            <p>Los departamentos cuentan con piscinas comunitarias disponible para todos los residentes de los establecimientos.</p>
+        </div>		
+        <div class="feature-box">
+            <i class="flaticon-151-real-estate-6"></i>
+            <h5>BUEN PRECIO</h5>
+            <p>Todos los departamentos presentados cuentan con precios razonables de acuerdo a la calidad que se presentan en estos.</p>
+        </div>		
+    </div>
+</section>
+<!-- Features section end-->
 {% endblock %}

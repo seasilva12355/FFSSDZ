@@ -1,0 +1,229 @@
+{% extends 'base_generic.html' %}
+
+{% block content %}
+<!-- Page top section -->
+{% load static %}
+<section class="page-top-section set-bg" data-setbg="{% static 'images/ecoarauco/fachada.jpg' %}">
+	<div class="container">
+		<div class="row">
+			<div class="col-lg-5">
+				<div class="page-top-text text-white">
+					<p></p>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+<!-- Page top section end -->
+
+<!-- Property details section -->
+<section class="property-details-section spad">
+	<div class="container">
+		<div class="row">
+			<div class="col-xl-6 col-lg-7">
+				<div class="property-details">
+					<h2>ECO ARAUCO</h2>
+					<h5>San Diego 2044, Santiago, Región Metropolitana.</h5><br>
+					<div class="property-info">
+						<h6>Espacio disponible</h6>
+						<div class="pi-icon">
+							<i class="flaticon-151-plans"></i>
+							<span>67,27 m2</span>
+						</div>
+					</div>
+					<div class="property-info">
+						<h6>Dormitorios</h6>
+						<div class="pi-icon">
+							<i class="flaticon-151-beds"></i>
+							<span>2</span>
+						</div>
+					</div>
+					<div class="property-info">
+						<h6>Baños</h6>
+						<div class="pi-icon">
+							<i class="flaticon-151-relax"></i>
+							<span>1</span>
+						</div>
+					</div>
+					<div class="property-info">
+						<h6>Aparcamiento</h6>
+						<div class="pi-icon">
+							<i class="flaticon-151-transportation"></i>
+							<span>Sí</span>
+						</div>
+					</div>
+				</div>
+				<p>
+					Ubicado en el histórico Barrio Franklin y a pasos del reconocido persa Bío-Bío, 
+					Eco Arauco es el lugar ideal para vivir en la ciudad. Perfectamente conectado, 
+					en sus alrededores encontrarás locales comerciales de todo tipo, restaurantes y una amplia gama de servicios. 
+				</p>
+			</div>
+			<div class="col-xl-6 col-lg-5 text-lg-right text-left">
+				<div class="property-price">
+					<h2>UF 2.415,00</h2>
+					<p>∗ Valor no considera estacionamientos ni bodegas.</p>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+<!-- Property details section end -->
+
+<!-- Property features slider -->
+<div class="property-features-slider owl-carousel">
+	{% load static %}
+	<a href="{% static 'images/ecoarauco/fachada.jpg' %}" class="img-popup-gallery">
+		<img src="{% static 'images/ecoarauco/fachada.jpg' %}" alt="">
+		<i class="flaticon-151-reading-glasses"></i>
+	</a>
+	{% load static %}
+	<a href="{% static 'images/ecoarauco/gimnasio.jpg' %}" class="img-popup-gallery">
+		<img src="{% static 'images/ecoarauco/dormitorio.jpg' %}" alt="">
+		<i class="flaticon-151-reading-glasses"></i>
+	</a>
+	{% load static %}
+	<a href="{% static 'images/ecoarauco/cocina.jpg' %}" class="img-popup-gallery">
+		<img src="{% static 'images/ecoarauco/cocina.jpg' %}" alt="">
+		<i class="flaticon-151-reading-glasses"></i>
+	</a>
+	{% load static %}
+	<a href="{% static 'images/ecoarauco/gimnasio.jpg' %}" class="img-popup-gallery">
+		<img src="{% static 'images/ecoarauco/gimnasio.jpg' %}" alt="">
+		<i class="flaticon-151-reading-glasses"></i>
+	</a>
+</div>
+<!-- Property features slider end -->
+
+<!-- Property overview section-->
+<section class="property-overview-section spad pb-0">
+	<div class="container">
+		<div class="row">
+			<div class="col-lg-6">
+				<div class="property-overview-text">
+					<h4>DETALLES GENERALES</h4>
+					<p>Características y terminaciones: ventanas termopanel y marco de PVC blanco. 
+						Piso gres porcelánico en todo el departamento. Cocina con mesón de granito con lavaplatos bajo cubierta. 
+						Cocina de vitrocerámica, horno eléctrico y campana retráctil. Calefacción estufas murales eléctricas. 
+						Muebles vanitorios con cubierta porcelánica vitrificada. Clóset para lavadora.<br>
+						Equipamiento comunitario: fitness, lounge interior, salón de lectura, centro de lavado, salón gourmet y games zone. 
+						BBQ con fogón, piscina, lounge panorámico y áreas verdes.</p>
+				</div>
+			</div>
+			<div class="col-lg-6">
+				<div class="property-overview-text">
+					<h4>SERVICIOS CERCANOS</h4>
+					<ul>
+						<li>Bancos.</li>
+						<li>Plazas.</li>
+						<li>Restaurantes temáticos.</li>
+						<li>Centros comerciales.</li>
+						<li>Estaciones de autobuses.</li>
+						<li>Supermercados.</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="container-fluid pt-5">
+		<div class="row">
+			<div class="col-lg-6 p-0">
+				{% load static %}
+				<img src="{% static 'images/ecoarauco/dormitorio.jpg' %}" alt="">
+			</div>
+			<div class="col-lg-6 p-0 d-flex align-items-center justify-content-center">
+				<div class="property-text-warp">
+					<div class="property-overview-text">
+						<h4>¿QUÉ POSEE CADA VIVIENDA?</h4>
+						<p>
+							El departamento posee dos dormitorios, siendo uno matrimonial y otro individual. También posee baño, cocina, living comedor y balcón.<br>
+							Además, cada departamento cuenta con un armario de pasillo y su cocina amueblada.
+						</p>
+					</div>
+				</div>
+			</div>
+			<div class="col-lg-6 p-0 d-flex align-items-center justify-content-center order-2 order-lg-1">
+				<div class="property-text-warp">
+					<div class="property-overview-text">
+						<h4>ADICIONALMENTE</h4>
+						<p>El edificio cuenta con un gimnasio para que los residentes de este puedan darle uso libremente.
+							También posee estacionamiento, ascensores y una piscina para los habitantes.
+						</p>
+					</div>
+				</div>
+			</div>
+			<div class="col-lg-6 p-0 order-1 order-lg-2">
+				{% load static %}
+				<img src="{% static 'images/ecoarauco/gimnasio.jpg' %}" alt="">
+			</div>
+		</div>
+	</div>
+</section>
+	
+<!-- Contactar-->
+<section class="contact-section">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-7 offset-lg-3">
+					<div class="contact-info-box-propiedad">
+						<h5 class="contact-title">SALA DE VENTAS</h5>
+						<div class="contact-info">
+							<div class="ci-item">
+								{% load static %}
+								<img src="{% static 'images/icons/location.png' %}" class="ci-icon" alt="">
+								<p>San Diego 2044, Santiago, Región Metropolitana</p>
+							</div>
+							<div class="ci-item">
+								{% load static %}
+								<img src="{% static 'images/icons/headphone.png' %}" class="ci-icon" alt="">
+								<p>(56) 9 73766014<br>(56) 9 73721387 </p>
+							</div>
+						</div>
+						<h5 class="contact-title">¿Deseas comprar un departamento y hacerlo tu hogar?<br>Rellena los datos y nos pondremos en contacto contigo.</h5>
+						<form class="contact-form" name="datosEcoArauco" method="post" action="envia.html">
+							<div class="form-field">
+								{% load static %}
+								<img src="{% static 'images/icons/usuario.png' %}" alt="" >
+								<input id="nombre" type="text" placeholder="Nombre completo" required>
+							</div>
+							<div class="form-field">
+								{% load static %}
+								<img src="{% static 'images/icons/rut.png' %}" alt="" >
+								<input id="rut" type="text" pattern="[0-9]{2}.[0-9]{3}.[0-9]{3}-[0-9Kk]{1}" placeholder="Rut. Ej: 12.345.678-k" required>
+							</div>
+							<div class="form-field">
+								{% load static %}
+								<img src="{% static 'images/icons/numero.jpg' %}" alt="" >
+								<input id="numero" type="tel" pattern="9[0-9]{8}" placeholder="Número celular. Ej: 911223344" required>
+							</div>
+							<div class="form-field">
+								{% load static %}
+								<img src="{% static 'images/icons/correo.png' %}" alt="" >
+								<input id="correo" type="email" placeholder="Correo electrónico" required>
+							</div>
+							<div class="form-field">
+								{% load static %}
+								<img src="{% static 'images/icons/casa.png' %}" alt="" >
+								<select class="fieldSelect">
+										<option id="ecoarauco" value="ecoarauco">Eco Arauco</option>
+								</select><br>
+							</div>
+							<button id="enviar" type="submit" onmouseover="Destacar()" class="site-btn">Enviar</button>
+							<button id="limpiar" type="button" onmouseover="Destacar()" onclick="ConfirmarLimpiarEcoArauco()" class="site-btn-limpiar">Limpiar</button>
+						</form>
+						<div class="div-mapa">
+							<button class="boton-mapa" onmouseover="Destacar()" id="mostrarocultar">Mostrar / Ocultar mapa</button>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+</section>
+<!--Fin contactar-->
+<!-- Mapa -->
+<section class="section-map" id="mapa">
+	<div class="map">
+		<iframe src="https://www.google.com/maps/embed/v1/place?q=place_id:EjZTYW4gRGllZ28gMjA0NCwgU2FudGlhZ28sIFJlZ2nDs24gTWV0cm9wb2xpdGFuYSwgQ2hpbGUiMRIvChQKEgn1203VOMVilhEpGcKxEJS7WRD8DyoUChIJX_vRuBPFYpYRS7EjsjjFiVk&key=AIzaSyDqVUrexZ4Rjwlro_LY6vBtDDTMPkBv_hg" style="border:0"></iframe>
+	</div>
+</section>
+{% endblock %}

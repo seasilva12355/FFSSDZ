@@ -1,38 +1,111 @@
+{% load staticfiles %}
 <!DOCTYPE html>
-<html lang="en">
-<head>
-  
-  {% block title %}<title>URBAN S.A.</title>{% endblock %}
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-  
-  <!-- Add additional CSS in static file -->
-  {% load static %}
-  <link rel="stylesheet" href="{% static 'css/styles.css' %}">
+<html lang="zxx">
+<head>  
+	{% block title %}<title>URBAN S.A.</title>{% endblock %}
+	<meta charset="UTF-8">
+	<meta name="description" content="Real estate html template">
+	<meta name="keywords" content="real estate, html">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	{% load static %}
+	<link href="{% static 'images/home.png' %}" rel="shortcut icon"/>
+
+	<!-- Google font -->
+	<link href="https://fonts.googleapis.com/css?family=Sarabun:300,300i,400,400i,500,500i,600,600i,700,700i&display=swap" rel="stylesheet">
+
+	<!-- Scripts -->
+	{% load static %}
+	<script src="{% static 'js/jquery-3.2.1.min.js' %}"></script>
+	{% load static %}
+	<script src="{% static 'js/bootstrap.min.js' %}"></script>
+	{% load static %}
+	<script src="{% static 'js/owl.carousel.min.js' %}"></script>
+	{% load static %}
+	<script src="{% static 'js/jquery.magnific-popup.min.js' %}"></script>
+	{% load static %}
+	<script src="{% static 'js/main.js' %}"></script>
+	{% load static %}
+	<script src="{% static 'js/funciones.js' %}"></script>
+
+	<!-- Add additional CSS in static file -->
+	{% load static %}
+	<link rel="stylesheet" href="{% static 'css/bootstrap.min.css' %}"/>
+	{% load static %}
+	<link rel="stylesheet" href="{% static 'css/font-awesome.min.css' %}"/>
+	{% load static %}
+	<link rel="stylesheet" href="{% static 'css/flaticon.css' %}"/>
+	{% load static %}
+	<link rel="stylesheet" href="{% static 'css/magnific-popup.css' %}"/>
+	{% load static %}
+	<link rel="stylesheet" href="{% static 'css/owl.carousel.min.css' %}"/>
+	{% load static %}
+	<link rel="stylesheet" href="{% static 'css/styles.css' %}"/>
 </head>
 
 <body>
+	<div id="preloder">
+		<div class="loader"></div>
+	</div>
+  	<!-- Header section -->
+	<header class="header-section">
+		<!-- logo -->
+		<a href="{% url 'index' %}" class="site-logo">
+			{% load static %}
+			<img src="{% static 'images/logoURBAN.png' %}" alt="">
+		</a>
+		<div class="container">
+			{% block sidebar %}
+				<ul class="main-menu">
+					<li><a href="{% url 'index' %}">Inicio</a></li>
+					<li><a href="{% url 'about' %}">Sobre Nosotros</a></li>
+					<li><a href="{% url 'contact' %}">Contáctanos</a></li>
+				</ul>
+			{% endblock %}
+		</div>
+  	</header>
+  	{% block content %}
 
-  <div class="container-fluid">
-
-    <div class="row">
-      <div class="col-sm-2">
-      {% block sidebar %}
-      <ul class="sidebar-nav">
-          <li><a href="{% url 'index' %}">Inicio</a></li>
-          <li><a href="">Clientes</a></li>
-          <li><a href="">Departamentos</a></li>
-      </ul>
-     {% endblock %}
-      </div>
-      <div class="col-sm-6 ">
-      {% block content %}{% endblock %}
-      </div>
-    </div>
-
-  </div>
+	{% endblock %}
+	<!-- Footer section -->
+		<footer class="footer-section">
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-5 col-md-2 col-sm-12">
+						<div class="footer-widget">
+							{% load static %}
+							<img src="{% static 'images/logoURBAN.png' %}" alt="">
+						</div>
+					</div>
+					<div class="col-lg-2 col-md-3 col-sm-4">
+						<div class="footer-widget">
+							<h5>URBAN S.A.</h5>
+							<ul>
+								<li><a href="{% url 'index' %}">Inicio</a></li>
+								<li><a href="{% url 'about' %}">Sobre Nosotros</a></li>
+								<li><a href="{% url 'contact' %}">Contáctanos</a></li>
+							</ul>
+						</div>
+					</div>
+					<div class="col-lg-2 col-md-3 col-sm-4">
+						<div class="footer-widget">
+							<h5>TELÉFONO</h5>
+							<p class="footer-p">600 594 9494</p>
+							<p class="footer-p">600 600 2322</p>
+						</div>
+					</div>
+					<div class="col-lg-3 col-md-3 col-sm-4">
+						<div class="footer-widget">
+							<h5>DIRECCIÓN</h5>
+							<p class="footer-p">Av. Esq Blanca 501, Maipú, Región Metropolitana</p>
+							<p class="footer-p-oscuro">*Atendemos de Lunes a Sábado de las 10:00 a las 19:00 hrs.*</p>
+						</div>
+					</div>
+				</div>
+				<div class="copyright">
+					Copyright &copy;<script>document.write(new Date().getFullYear());</script> Todos los derechos reservados.
+				</div>
+			</div>
+		</footer>
+	<!-- Footer section end-->
 </body>
 </html>
