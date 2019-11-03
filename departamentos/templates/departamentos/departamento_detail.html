@@ -1,0 +1,32 @@
+{% extends 'base_generic.html' %}
+
+{% block content %}
+<section class="contact-section">
+    <div class="contact-info-box-propiedad">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-7 offset-lg-4">
+                        <h2>Departamento: {{ departamento }} </h2>
+                        <br>
+                        <p><strong>Id: </strong>{{departamento.id_departamento}}</p>
+                        <p><strong>Nombre: </strong>{{cliente.nombre_completo}}</p>
+                        <p><strong>Descripción: </strong>{{departamento.descripcion}}</p>
+                        <p><strong>Valor UF: </strong>{{departamento.uf}}</p>
+                        <p><strong>N° habitaciones: </strong>{{departamento.numero_habitaciones}}</p>
+                        <p><strong>N° baños: </strong>{{departamento.numero_banos}}</p>
+                        <div>
+                            <h4>Cliente:</h4>
+                            <br>
+                            <dl>
+                                {% for cliente in departamento.cliente_set.all %}
+                                    <dt>Rut cliente: <a href="{% url 'cliente_detail' cliente.pk %}">{{cliente}}</a>{{cliente.clienteinstance_set.all.count}} - Nombre cliente: {{cliente.nombre_completo}}</dt>
+                                {% endfor %}
+                            </dl>
+                        </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+{% endblock %}

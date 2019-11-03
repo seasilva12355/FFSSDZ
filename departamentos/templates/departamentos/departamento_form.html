@@ -1,0 +1,25 @@
+{% extends 'base_generic.html' %}
+
+{% block content %}
+<section class="contact-section">
+    <div class="contact-info-box-propiedad">
+        <form action="" method="POST" class="contact-form">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-7 offset-lg-5">
+                        <h5 class="contact-title">ADMINISTRAR DEPARTAMENTO</h5>
+                        {% csrf_token %}
+                        <table>
+                            {{ form.as_table }}
+                        </table>
+                    </div>
+                </div>
+            </div>
+            <button id="enviar" type="submit" onmouseover="Destacar()" class="site-btn">Ingresar</button>
+            <button id="limpiar" type="button" onmouseover="Destacar()" onclick="ConfirmarLimpiarEcoArauco()" class="site-btn-limpiar">Limpiar</button>
+        </form>
+    </div>
+</section>
+
+
+{% endblock %}

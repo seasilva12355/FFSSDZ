@@ -184,32 +184,32 @@
 							<div class="form-field">
 								{% load static %}
 								<img src="{% static 'images/icons/usuario.png' %}" alt="" >
-								<input id="nombre" type="text" placeholder="Nombre completo" required>
+								<input id="nombre" name="nombre"" type="text" placeholder="Nombre completo" required>
 							</div>
 							<div class="form-field">
 								{% load static %}
 								<img src="{% static 'images/icons/rut.png' %}" alt="" >
-								<input id="rut" type="text" pattern="[0-9]{2}.[0-9]{3}.[0-9]{3}-[0-9Kk]{1}" placeholder="Rut. Ej: 12.345.678-k" required>
+								<input id="rut" name="rut" type="text" pattern="[0-9]{2}.[0-9]{3}.[0-9]{3}-[0-9Kk]{1}" placeholder="Rut. Ej: 12.345.678-k" required>
 							</div>
 							<div class="form-field">
 								{% load static %}
 								<img src="{% static 'images/icons/numero.jpg' %}" alt="" >
-								<input id="numero" type="tel" pattern="9[0-9]{8}" placeholder="Número celular. Ej: 911223344" required>
+								<input id="numero" name="numero" type="tel" pattern="9[0-9]{8}" placeholder="Número celular. Ej: 911223344" required>
 							</div>
 							<div class="form-field">
 								{% load static %}
 								<img src="{% static 'images/icons/correo.png' %}" alt="" >
-								<input id="correo" type="email" placeholder="Correo electrónico" required>
+								<input id="correo" name="correo" type="email" placeholder="Correo electrónico" required>
 							</div>
 							<div class="form-field">
 								{% load static %}
 								<img src="{% static 'images/icons/casa.png' %}" alt="" >
 								<select class="fieldSelect">
-										<option id="ecoarauco" value="ecoarauco">Eco Arauco</option>
+										<option id="ecoarauco" name="edificio" value="ecoarauco">Eco Arauco</option>
 								</select><br>
 							</div>
-							<button id="enviar" type="submit" onmouseover="Destacar()" class="site-btn">Enviar</button>
-							<button id="limpiar" type="button" onmouseover="Destacar()" onclick="ConfirmarLimpiarEcoArauco()" class="site-btn-limpiar">Limpiar</button>
+							<button id="enviar" name="enviar" type="submit" onmouseover="Destacar()" class="site-btn">Enviar</button>
+							<button id="limpiar" name="limpiar" type="button" onmouseover="Destacar()" onclick="ConfirmarLimpiarEcoArauco()" class="site-btn-limpiar">Limpiar</button>
 						</form>
 						<div class="div-mapa">
 							<button class="boton-mapa" onmouseover="Destacar()" id="mostrarocultar">Mostrar / Ocultar mapa</button>
