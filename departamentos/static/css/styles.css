@@ -1384,6 +1384,10 @@ Contact page
 	background: #fff;
 	padding: 50px 62px 83px;
 }
+.contact-info-box-crud{
+	background: #fff;
+	padding: 50px 62px 83px;
+}
 .fieldSelect{
 	position: relative;
 	height: 28px;
@@ -1993,6 +1997,10 @@ Responsive
 		background: #fff;
 		padding: 50px 40px 83px;
 		}
+	.contact-info-box-crud{
+		background: #fff;
+		padding: 50px 40px 83px;
+		}
 	.section-title h2{
 		font-size: 30px;
 		font-weight: 700;
@@ -2094,6 +2102,10 @@ Responsive
 		background: #fff;
 		padding: 50px 40px 83px;
 		}
+	.contact-info-box-crud{
+		background: #fff;
+		padding: 50px 40px 83px;
+		}
 }
 @media only screen and (max-width: 265px) {
 	.features-section {
@@ -2185,6 +2197,10 @@ Responsive
 		text-align: center;
 	}
 	.contact-info-box-propiedad{
+		background: #fff;
+		padding: 50px 40px 83px;
+		}
+	.contact-info-box-crud{
 		background: #fff;
 		padding: 50px 40px 83px;
 		}
