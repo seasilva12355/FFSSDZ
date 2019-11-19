@@ -31,3 +31,30 @@ class Departamento(models.Model):
     def get_absolute_url(self):
         """Returns the url to access a detail record for this department."""
         return reverse('departamento_detail', args=[str(self.id_departamento)])
+
+class DepartamentoInstance(models.Model):
+    id = models.CharField(primary_key=True, max_length=10)
+    departamento = models.ForeignKey('Departamento', on_delete=models.SET_NULL, null=True)
+    fecha_instancia = models.DateField()
+
+    LOAN_STATUS = (
+        ('d', 'Disponible'),
+        ('f', 'Fuera de servicio'),
+        ('v', 'Vendido'),
+    )
+
+    status = models.CharField(
+        max_length=1,
+        choices=LOAN_STATUS,
+        blank=True,
+        default='d',
+        help_text='Disponibilidad de departamento',
+    )
+
+    def __str__(self):
+        """String for representing the Model object."""
+        return self.id
+
+    def get_absolute_url(self):
+        """Returns the url to access a detail record for this department."""
+        return reverse('departamentoinstance_detail', args=[str(self.id)])
