@@ -1,25 +1,45 @@
 {% extends 'base_generic.html' %}
 
 {% block content %}
+<!-- Page top section -->
+{% load static %}
+<section class="page-top-section set-bg" data-setbg="{% static 'images/page-top-bg/4.jpg' %}">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-5">
+                <div class="page-top-text text-white">
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- Page top section end -->
+
 <section class="contact-section">
-    <div class="contact-info-box-propiedad">
-        <form action="" method="POST" class="contact-form">
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-7 offset-lg-5">
-                        <h5 class="contact-title">ADMINISTRAR DEPARTAMENTO</h5>
-                        {% csrf_token %}
-                        <table>
-                            {{ form.as_table }}
-                        </table>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-7 offset-lg-3">
+                    <div class="contact-info-box-crud">
+                        <form action="" method="POST" class="contact-form">
+                            <div class="container">
+                                <div class="row">
+                                    <div class="col-lg-7 offset-lg-3">
+                                        <h5 class="contact-title">ADMINISTRAR DEPARTAMENTO</h5>
+                                        {% csrf_token %}
+                                        <table>
+                                            {{ form.as_table }}
+                                        </table>
+                                    </div>
+                                </div>
+                            </div>
+                            <button id="enviar" type="submit" onmouseover="Destacar()" class="site-btn">Ingresar</button>
+                            <button id="limpiar" type="button" onmouseover="Destacar()" onclick="ConfirmarLimpiarEcoArauco()" class="site-btn-limpiar">Limpiar</button>
+                        </form>
                     </div>
                 </div>
             </div>
-            <button id="enviar" type="submit" onmouseover="Destacar()" class="site-btn">Ingresar</button>
-            <button id="limpiar" type="button" onmouseover="Destacar()" onclick="ConfirmarLimpiarEcoArauco()" class="site-btn-limpiar">Limpiar</button>
-        </form>
-    </div>
-</section>
+        </div>
+    </section>
 
 
 {% endblock %}

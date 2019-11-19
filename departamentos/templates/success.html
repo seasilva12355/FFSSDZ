@@ -17,19 +17,16 @@
 
 <section class="contact-section">
     <div class="contact-info-box-propiedad">
-        <div class="contact-form">
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-7 offset-lg-4">
-                        <h5 class="contact-title">¿Estás seguro de eliminar el departamento {{ departamento }}?</h5>
-                        <form action="" method="POST">
-                            {% csrf_token %}
-                            <input type="submit" action="" onmouseover="Destacar()" class="site-btn" value="Sí, eliminar."/>
-                        </form>
-                    </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-7 offset-lg-5">
+                    <h4>ENVÍO EXITOSO</h4>
+                    <br>
+                    <h5>El envío se ha realizado con éxito.</h5>
                 </div>
             </div>
         </div>
     </div>
 </section>
+
 {% endblock %}

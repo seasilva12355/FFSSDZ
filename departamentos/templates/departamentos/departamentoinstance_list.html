@@ -20,18 +20,18 @@
             <div class="container">
                 <div class="row">
                     <div class="col-lg-7 offset-lg-5">
-                        <h2>Lista de clientes</h2>
+                        <h2>Lista de instancias</h2>
                         <br>
-                        {% if cliente_list %}
+                        {% if departamentoinstance_list %}
                         <ul>
-                            {% for cliente in cliente_list %}
+                            {% for departamentoinstance in departamentoinstance_list %}
                             <li>
-                                Cliente: <a href="{{ cliente.get_absolute_url }}">{{ cliente.rut_cliente }}</a> - Nombre: {{ cliente.nombre_completo }}
+                                Instancia: <a href="{{ cliente.get_absolute_url }}">{{ departamentoinstance.id }}</a> - Status: {{ departamentoinstance.status }}
                             </li>
                             {% endfor %}
                         </ul>
                         {% else %}
-                            <p>No existen clientes en la lista.</p>
+                            <p>No existen instancias en la lista.</p>
                         {% endif %}
                     </div>
                 </div>

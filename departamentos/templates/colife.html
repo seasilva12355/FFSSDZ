@@ -1,0 +1,212 @@
+{% extends 'base_generic.html' %}
+
+{% block content %}
+<!-- Page top section -->
+{% load static %}
+<section class="page-top-section set-bg" data-setbg="img/CoLife/depa22.jpg">
+</section>
+<!-- Page top section end -->
+
+<!-- Property details section -->
+<section class="property-details-section spad">
+	<div class="container">
+		<div class="row">
+			<div class="col-xl-6 col-lg-7">
+				<div class="property-details">
+					<h2>CoLife</h2>
+					<h5>General Jofré 220, Santiago, Región Metropolitana.</h5><br>
+					<div class="property-info">
+						<h6>Espacio disponible</h6>
+						<div class="pi-icon">
+							<i class="flaticon-151-plans"></i>
+							<span>53,76 m2</span>
+						</div>
+					</div>
+					<div class="property-info">
+						<h6>Dormitorios</h6>
+						<div class="pi-icon">
+							<i class="flaticon-151-beds"></i>
+							<span>2</span>
+						</div>
+					</div>
+					<div class="property-info">
+						<h6>Baños</h6>
+						<div class="pi-icon">
+							<i class="flaticon-151-relax"></i>
+							<span>2</span>
+						</div>
+					</div>
+					<div class="property-info">
+						<h6>Aparcamiento</h6>
+						<div class="pi-icon">
+							<i class="flaticon-151-transportation"></i>
+							<span>Sí</span>
+						</div>
+					</div>
+				</div>
+				<p>CoLife se encuentra en una inmejorable ubicación de Santiago, a pocos pasos del Metro y del parque Bustamante. Aprovecha su excelente conectividad en un barrio lleno de vida.</p>
+			</div>
+			<div class="col-xl-6 col-lg-5 text-lg-right text-left">
+				<div class="property-price">
+					<h2>UF 2.218,00</h2>
+					<p>∗ Valor no considera estacionamientos ni bodegas.</p>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+<!-- Property details section end -->
+
+<!-- Property features slider -->
+<div class="property-features-slider owl-carousel">
+	{% load static %}
+	<a href="{% static 'images/CoLife/depa22C.jpg' %}" class="img-popup-gallery">
+		<img src="{% static 'images/CoLife/depa22C.jpg' %}" alt="">
+		<i class="flaticon-151-reading-glasses"></i>
+	</a>
+	{% load static %}
+	<a href="{% static 'images/CoLife/c2.jpg' %}" class="img-popup-gallery">
+		<img src="{% static 'images/CoLife/c2.jpg' %}" alt="">
+		<i class="flaticon-151-reading-glasses"></i>
+	</a>
+	{% load static %}
+	<a href="{% static 'images/CoLife/c3.jpg' %}" class="img-popup-gallery">
+		<img src="{% static 'images/CoLife/c3.jpg' %}" alt="">
+		<i class="flaticon-151-reading-glasses"></i>
+	</a>
+	{% load static %}
+	<a href="{% static 'images/CoLife/c4.jpg' %}" class="img-popup-gallery">
+		<img src="im{% static 'imagesg/CoLife/c4.jpg' %}" alt="">
+		<i class="flaticon-151-reading-glasses"></i>
+	</a>
+</div>
+<!-- Property features slider end -->
+
+<!-- Property overview section-->
+<section class="property-overview-section spad pb-0">
+	<div class="container">
+		<div class="row">
+			<div class="col-lg-6">
+				<div class="property-overview-text">
+					<h4>DETALLES GENERALES</h4>
+					<p>Porcelanato en living, comedor y cocina, fotolaminado en dormitorios, barandas vidriadas. Cocina con cubiertas de Quarztone, equipada con horno eléctrico, campana y vitrocerámica, refrigerador.<br>
+						Equipamiento comunitario: hall de acceso de doble altura y bicicletero.
+					</p>
+				</div>
+			</div>
+			<div class="col-lg-6">
+				<div class="property-overview-text">
+					<h4>SERVICIOS CERCANOS</h4>
+					<ul>
+						<li>Estaciones de metro.</li>
+						<li>Salones de belleza / peluquerías.</li>
+						<li>Tiendas de muebles / artículos para el hogar.</li>
+						<li>Veterinarios.</li>
+						<li>Restaurantes.</li>
+						<li>Estaciones de servicio.</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="container-fluid pt-5">
+		<div class="row">
+			<div class="col-lg-6 p-0">
+				{% load static %}
+				<img src="{% static 'images/colife/dormitorio.jpg' %}" alt="">
+			</div>
+			<div class="col-lg-6 p-0 d-flex align-items-center justify-content-center">
+				<div class="property-text-warp">
+					<div class="property-overview-text">
+						<h4>¿QUÉ POSEE CADA VIVIENDA?</h4>
+						<p>El departamento cuenta con dos dormitorios, uno matrimonial y otro individual. Posee living, comedor, cocina y baño.</p>
+					</div>
+				</div>
+			</div>
+			<div class="col-lg-6 p-0 d-flex align-items-center justify-content-center order-2 order-lg-1">
+				<div class="property-text-warp">
+					<div class="property-overview-text">
+						<h4>ADICIONALMENTE</h4>
+						<p>El edificio cuenta con una sala multiuso, sala co-break, salón Lounge gourmet, sala co-working, quincho, patio común y una piscina siendo todo esto de uso comunitario.
+							Tambien cuenta con estacionamiento.
+						</p>
+					</div>
+				</div>
+			</div>
+			<div class="col-lg-6 p-0 order-1 order-lg-2">
+				{% load static %}
+				<img src="{% static 'images/CoLife/multiuso.jpg' %}" alt="">
+			</div>
+		</div>
+	</div>
+</section>
+
+<!-- Contactar-->
+<section class="contact-section">
+	<div class="container">
+		<div class="row">
+			<div class="col-lg-7 offset-lg-3">
+				<div class="contact-info-box-propiedad">
+					<h5 class="contact-title">SALA DE VENTAS</h5>
+					<div class="contact-info">
+						<div class="ci-item">
+							{% load static %}
+							<img src="{% static 'images/icons/location.png' %}" class="ci-icon" alt="">
+							<p>General Jofré 220, Santiago, Región Metropolitana</p>
+						</div>
+						<div class="ci-item">
+							{% load static %}
+							<img src="{% static 'images/icons/headphone.png' %}" class="ci-icon" alt="">
+							<p>(56) 9 73363254<br>(56) 9 65421237 </p>
+						</div>
+					</div>
+					<h5 class="contact-title">¿Deseas comprar un departamento y hacerlo tu hogar?<br>Rellena los datos y nos pondremos en contacto contigo.</h5>
+					<form class="contact-form" name="datosCoLife" method="post" action="envia.html">
+						<div class="form-field">
+							{% load static %}
+							<img src="{% static 'images/icons/usuario.png' %}" alt="" >
+							<input id="nombre" type="text" placeholder="Nombre completo" required>
+						</div>
+						<div class="form-field">
+							{% load static %}
+							<img src="{% static 'images/icons/rut.png' %}" alt="" >
+							<input id="rut" type="text" pattern="[0-9]{2}.[0-9]{3}.[0-9]{3}-[0-9Kk]{1}" placeholder="Rut. Ej: 12.345.678-k" required>
+						</div>
+						<div class="form-field">
+							{% load static %}
+							<img src="{% static 'images/icons/numero.jpg' %}" alt="" >
+							<input id="numero" type="tel" pattern="9[0-9]{8}" placeholder="Número celular. Ej: 911223344" required>
+						</div>
+						<div class="form-field">
+							{% load static %}
+							<img src="{% static 'images/icons/correo.png' %}" alt="" >
+							<input id="correo" type="email" placeholder="Correo electrónico" required>
+						</div>
+						<div class="form-field">
+							{% load static %}
+							<img src="{% static 'images/icons/casa.png' %}" alt="" >
+							<select class="fieldSelect">
+									<option id="colife" value="colife">CoLife</option>
+							</select><br>
+						</div>
+						<button id="enviar" type="submit" onmouseover="Destacar()" class="site-btn">Enviar</button>
+						<button id="limpiar" type="button" onmouseover="Destacar()" onclick="ConfirmarLimpiarCoLife()" class="site-btn-limpiar">Limpiar</button>
+					</form>
+					<div class="div-mapa">
+						<button class="boton-mapa" onmouseover="Destacar()" id="mostrarocultar">Mostrar / Ocultar mapa</button>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+<!--Fin contactar-->
+<!-- Mapa -->
+<section class="section-map" id="mapa">
+	<div class="map">
+		<iframe src="https://www.google.com/maps/embed/v1/place?q=General%20Jofr%C3%A9%20220%2C%20Santiago%2C%20Metropolitana&key=AIzaSyDqVUrexZ4Rjwlro_LY6vBtDDTMPkBv_hg" style="border:0"></iframe>
+	</div>
+</section>
+{% endblock %}
+
+

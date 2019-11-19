@@ -1,11 +1,25 @@
 {% extends 'base_generic.html' %}
 
 {% block content %}
+<!-- Page top section -->
+{% load static %}
+<section class="page-top-section set-bg" data-setbg="{% static 'images/page-top-bg/4.jpg' %}">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-5">
+                <div class="page-top-text text-white">
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- Page top section end -->
+
 <section class="contact-section">
     <div class="contact-info-box-propiedad">
         <div class="container">
             <div class="row">
-                <div class="col-lg-7 offset-lg-4">
+                <div class="col-lg-7 offset-lg-5">
                         <h2>Cliente: {{ cliente.nombre_completo }} </h2>
                         <br>
                         <p><strong>Rut cliente: </strong>{{cliente.rut_cliente}}</p>
@@ -15,10 +29,10 @@
                         <p><strong>Número: </strong>{{cliente.num_telefonico}}</p>
                         <div>
                             <h4>Departamentos:</h4>
-                            <br>
+                            <hr>
                             <dl>
                                 {% for departamento in cliente.departamento_set.all %}
-                                    <dt>Id departamento: <a href="{% url 'departamento_detail' departamento.pk %}">{{departamento}}</a>{{departamento.departamentoinstance_set.all.count}} - Nombre departamento: {{departamento.nombre}}</dt>
+                                    <dt>Id departamento: <a href="{% url 'departamento_detail' departamento.pk %}">{{departamento}}</a> - Nombre departamento: {{departamento.nombre}}</dt>
                                 {% endfor %}
                             </dl>
                         </div>

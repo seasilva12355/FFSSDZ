@@ -17,19 +17,19 @@
 
 <section class="contact-section">
     <div class="contact-info-box-propiedad">
-        <div class="contact-form">
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-7 offset-lg-4">
-                        <h5 class="contact-title">¿Estás seguro de eliminar el departamento {{ departamento }}?</h5>
-                        <form action="" method="POST">
-                            {% csrf_token %}
-                            <input type="submit" action="" onmouseover="Destacar()" class="site-btn" value="Sí, eliminar."/>
-                        </form>
-                    </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-7 offset-lg-4">
+                        <h2>Instancia de departamento: {{ departamentoinstance }} </h2>
+                        <br>
+                        <p><strong>Id: </strong>{{departamentoinstance.id}}</p>
+                        <p><strong>Departamento: </strong><a href=""></a>{{departamentoinstance.departamento}}</p>
+                        <p><strong>Fecha instancia: </strong>{{departamentoinstance.fecha_instancia}}</p>
+                        <p><strong>Status: </strong>{{departamentoinstance.status}}</p>
                 </div>
             </div>
         </div>
     </div>
 </section>
+
 {% endblock %}

@@ -1,0 +1,97 @@
+{% extends 'base_generic.html' %}
+
+{% block content %}
+<!-- Page top section -->
+{% load static %}
+<section class="page-top-section set-bg" data-setbg="{% static 'images/page-top-bg/1.jpg' %}">
+	<div class="container">
+		<div class="row">
+			<div class="col-lg-6">
+				<div class="page-top-text text-white">
+					<h2>¿QUIÉNES SOMOS?</h2>
+					<p>Somos una constructora conformada por expertos en el rubro, la cual realiza edificaciones y ayuda a cumplir tus sueños de tu propio hogar.</p>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+<!-- Page top section end -->
+
+<!-- About section -->
+{% load static %}
+<section class="about-section">
+	<div class="container-fluid">
+		<div class="row">
+			<div class="col-lg-6">
+				<div class="about-text">
+					<h4>Creamos esta empresa con el fin de entregar su propio hogar a muchas personas, con precios acorde a lo ofrecido y bajo la tecnología actual.</h4>
+					<p>Estamos comprometidos a lograr lo que sea para que nuestros clientes se encuentren satisfechos y felices con sus departamentos.</p>
+					<p></p>
+				</div>
+			</div>
+			<div class="col-lg-6">
+				<div class="about-slider owl-carousel">
+					{% load static %}
+					<img src="{% static 'images/ecoarauco/gimnasio.jpg' %}" alt="">
+					{% load static %}
+					<img src="{% static 'images/about/1.jpg' %}" alt="">
+					{% load static %}
+					<img src="{% static 'images/ecoarauco/dormitorio.jpg' %}" alt="">
+					{% load static %}
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+<!-- About section end -->
+
+<!-- Milestone section end -->
+<section class="milestone-section">
+	<div class="milestone-warp">
+		<div class="milestone">
+			<h2>3</h2>
+			<h4>Departamentos</h4>
+		</div>
+		<div class="milestone">
+			<h2>150</h2>
+			<h4>Empleados</h4>
+		</div>
+		<div class="milestone">
+			<h2>20</h2>
+			<h4>Años de experiencia</h4>
+		</div>
+		<div class="milestone">
+			<h2>1</h2>
+			<h4>Ciudad</h4>
+		</div>
+		<div class="milestone">
+			<h2>4</h2>
+			<h4>Oficinas</h4>
+		</div>
+	</div>
+</section>
+<!-- Milestone section end -->
+
+<!-- About box text -->
+<div class="about-text-box-warp spad">
+	<div class="container">
+		<div class="row">
+			<div class="col-lg-6">
+				<div class="design-text">
+					<h4>UNETE A NUESTRO EQUIPO DE TRABAJO</h4>
+					<p>Si deseas ayudar a las personas a encontrar un buen departamento esta es tu oportunidad de lograrlo, unete a nuestro equipo y ayúdanos a ser una de las mejores empresas del mercado.</p>
+					<p>Por favor contacte con nosotros para más información. </p>
+				</div>
+			</div>
+			<div class="col-lg-6">
+				<div class="design-text">
+					<h4>CAPACIDADES</h4>
+					<p>Estamos dispuestos a llevar a URBAN S.A. a la cima y ser la constructora N°1 del mercado.</p>
+					<p>Para esto, contamos con una empresa enfática, que se preocupa del medio ambiente, el entorno donde construimos, el material y las tecnologías aplicadas.</p>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+<!-- About box text end -->
+{% endblock %}
