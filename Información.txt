@@ -1,8 +1,9 @@
 Nombre de los integrantes:
 Felipe Fuentes.
-Sebastián Silva.
+SebastiÃ¡n Silva.
 Diego Zapata.
 
 Usuario: admin
-Contraseña: duoc
+ContraseÃ±a: duoc
 Entorno virtual: django_ambiente_virtual
+proyecto final
