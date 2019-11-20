@@ -1,0 +1,35 @@
+{% extends 'base_generic.html' %}
+
+{% block content %}
+<!-- Page top section -->
+{% load static %}
+<section class="page-top-section set-bg" data-setbg="{% static 'images/page-top-bg/4.jpg' %}">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-5">
+                <div class="page-top-text text-white">
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- Page top section end -->
+
+<section class="contact-section">
+    <div class="contact-info-box-propiedad">
+        <div class="contact-form">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-7 offset-lg-4">
+                        <h5 class="contact-title">¿Estás seguro de eliminar el departamento {{ departamento }}?</h5>
+                        <form action="" method="POST">
+                            {% csrf_token %}
+                            <input type="submit" action="" onmouseover="Destacar()" class="site-btn" value="Sí, eliminar."/>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+{% endblock %}

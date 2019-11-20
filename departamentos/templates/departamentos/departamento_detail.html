@@ -1,0 +1,56 @@
+{% extends 'base_generic.html' %}
+
+{% block content %}
+<!-- Page top section -->
+{% load static %}
+<section class="page-top-section set-bg" data-setbg="{% static 'images/page-top-bg/4.jpg' %}">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-5">
+                <div class="page-top-text text-white">
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- Page top section end -->
+
+<section class="contact-section">
+    <div class="contact-info-box-propiedad">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-7 offset-lg-4">
+                    <h2>Departamento: {{ departamento }} </h2>
+                    <br>
+                    <p><strong>Id: </strong>{{departamento.id_departamento}}</p>
+                    <p><strong>Nombre: </strong>{{departamento.nombre}}</p>
+                    <p><strong>Descripción: </strong>{{departamento.descripcion}}</p>
+                    <p><strong>Valor UF: </strong>{{departamento.uf}}</p>
+                    <p><strong>N° habitaciones: </strong>{{departamento.numero_habitaciones}}</p>
+                    <p><strong>N° baños: </strong>{{departamento.numero_banos}}</p>
+
+                    <h4>Status:</h4>
+
+                    {% for copy in departamento.departamentoinstance_set.all %}
+                    <hr>
+                    <p class="{% if copy.status == 'd' %}text-success{% elif copy.status == 'd' %}text-danger{% else %}text-warning{% endif %}">{{ copy.get_status_display }}</p>
+                        {% if copy.status == 'v' %}
+                            <p><strong>Cliente:</strong></p>
+                            {% for cliente in departamento.cliente_set.all %}
+                                Rut cliente: <a href="{% url 'cliente_detail' cliente.pk %}">{{cliente}}</a> - Nombre cliente: {{cliente.nombre_completo}}
+                            {% endfor %}
+                            <p><strong>Fecha instancia:</strong> {{copy.fecha_instancia}}</p>
+                        {% endif %}
+                        
+                        {% if copy.status != 'v' %}
+                                <p><strong>No existe cliente asociado a este departamento.</strong></p>
+                                <p><strong>Fecha instancia:</strong> {{copy.fecha_instancia}}</p>
+                        {% endif %}   
+                    {% endfor %}
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+{% endblock %}

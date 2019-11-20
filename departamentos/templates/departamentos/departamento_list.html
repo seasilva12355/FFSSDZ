@@ -1,0 +1,41 @@
+{% extends 'base_generic.html' %}
+
+{% block content %}
+<!-- Page top section -->
+{% load static %}
+<section class="page-top-section set-bg" data-setbg="{% static 'images/page-top-bg/4.jpg' %}">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-5">
+                <div class="page-top-text text-white">
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- Page top section end -->
+
+<section class="contact-section">
+        <div class="contact-info-box-propiedad">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-7 offset-lg-4">
+                        <h2>Lista de departamentos</h2>
+                        <br>
+                        {% if departamento_list %}
+                        <ul>
+                            {% for departamento in departamento_list %}
+                            <li>
+                               Departamento: <a href="{{ departamento.get_absolute_url }}">{{ departamento.id_departamento }}</a> - {{ departamento.nombre }}
+                            </li>
+                            {% endfor %}
+                        </ul>
+                        {% else %}
+                            <p>No existen departamentos en la lista.</p>
+                        {% endif %}
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+{% endblock %}

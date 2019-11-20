@@ -5,4 +5,15 @@ Diego Zapata.
 
 Usuario: admin
 Contraseña: duoc
-Entorno virtual: django_ambiente_virtual
+Entorno virtual: django_urbansa
+
+URL ADMIN: http://127.0.0.1:8000/admin/
+
+EXPLICACIÓN: Profesora, como ya lo habíamos discutido el otro día, este proyecto presenta problemas al mostrar contenido relacionado al carrusel que incorporaba la maqueta de bootstrap. Al mismo tiempo, nos percatamos que dentro de un archivo llamado funciones.js que creamos para la primera unidad, algunas funciones de estas se ven de forma correcta en la web (funciones relacionadas a propiedades de hover), mientras que otras no (funciones relacionadas a toggle). Esto último lo podrá visualizar en alguna página relacionada a los departamentos que aparecen en index, o directamente en: http://127.0.0.1:8000/departamentos/ecoarauco donde el botón mostrar/ocultar se coloca amarillo gracias al archivo funciones.js, pero no oculta el mapa como deseamos, cosa que también debería hacer gracias al archivo funciones.js.
+
+También recuerde que el menú superior de la web posee las letras blancas, y como las fotos del fondo de ese menú no cargan (producto de la falta del carrusel) no se visualizan correctamente, pero ahí están, al lado del logo de la página (también lo hablamos el día lunes).
+
+Buscamos en muchas páginas, como también comparamos con otros proyectos, pero no podemos dar con el error que pareciera ser respecto a funciones y no a un documento JavaScript en sí.
+
+IMPORTANTE: Descubrimos que en Google Chrome (por lo menos en la versión 78.0.3904.108 de 64 bits) se visualiza la foto detrás del menú siempre y cuando no tenga interacción, como también el botón de ocultar mapa. Esto no funciona ni en Opera ni Firefox.
+*Entiendase por interacción a que la foto vaya cambiando, que pueda expandirse, desplazarse de posición en la página, etc*

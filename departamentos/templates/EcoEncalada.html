@@ -1,0 +1,212 @@
+{% extends 'base_generic.html' %}
+
+{% block content %}
+<!-- Page top section -->
+{% load static %}
+<section class="page-top-section set-bg" data-setbg="{% static 'images/ecoencalada/1.jpg' %}">
+</section>
+<!-- Page top section end -->
+
+<!-- Property details section -->
+<section class="property-details-section spad">
+	<div class="container">
+		<div class="row">
+			<div class="col-xl-6 col-lg-7">
+				<div class="property-details">
+					<h2>Eco Encalada</h2>
+					<h5>Almirante Blanco Encalada 2521, Santiago, Región Metropolitana.</h5><br>
+					<div class="property-info">
+						<h6>Espacio disponible</h6>
+						<div class="pi-icon">
+							<i class="flaticon-151-plans"></i>
+							<span>57,9 m2</span>
+						</div>
+					</div>
+					<div class="property-info">
+						<h6>Dormitorios</h6>
+						<div class="pi-icon">
+							<i class="flaticon-151-beds"></i>
+							<span>2</span>
+						</div>
+					</div>
+					<div class="property-info">
+						<h6>Baños</h6>
+						<div class="pi-icon">
+							<i class="flaticon-151-relax"></i>
+							<span>2</span>
+						</div>
+					</div>
+					<div class="property-info">
+						<h6>Aparcamiento</h6>
+						<div class="pi-icon">
+							<i class="flaticon-151-transportation"></i>
+							<span>Sí</span>
+						</div>
+					</div>
+				</div>
+				<p>Ubicado frente al histórico Club Hípico, el nuevo edificio Eco Encalada se encuentra en un sector privilegiado de la comuna de Santiago Centro, con excelente conectividad, cercano a autopistas, Metro, colegios, universidades, supermercados, Carabineros, áreas verdes y lugares emblemáticos de la ciudad, como el Parque O´Higgins. </p>
+			</div>
+			<div class="col-xl-6 col-lg-5 text-lg-right text-left">
+				<div class="property-price">
+					<h2>UF 2.830,00</h2>
+					<p>∗ Valor no considera estacionamientos ni bodegas.</p>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+<!-- Property details section end -->
+
+<!-- Property features slider -->
+<div class="property-features-slider owl-carousel">
+	{% load static %}
+	<a href="{% static 'images/ecoencalada/2.jpg' %}" class="img-popup-gallery">
+		{% load static %}
+		<img src="{% static 'images/ecoencalada/2.jpg' %}" alt="">
+		<i class="flaticon-151-reading-glasses"></i>
+	</a>
+	{% load static %}
+	<a href="{% static 'images/ecoencalada/3.jpg' %}" class="img-popup-gallery">
+		{% load static %}
+		<img src="{% static 'images/ecoencalada/3.jpg' %}" alt="">
+		<i class="flaticon-151-reading-glasses"></i>
+	</a>
+	{% load static %}
+	<a href="{% static 'images/ecoencalada/4.jpg' %}" class="img-popup-gallery">
+		{% load static %}
+		<img src="{% static 'images/ecoencalada/4.jpg' %}" alt="">
+		<i class="flaticon-151-reading-glasses"></i>
+	</a>
+	{% load static %}
+	<a href="{% static 'images/ecoencalada/5.jpg' %}" class="img-popup-gallery">
+		{% load static %}
+		<img src="{% static 'images/ecoencalada/5.jpg' %}" alt="">
+		<i class="flaticon-151-reading-glasses"></i>
+	</a>
+</div>
+<!-- Property features slider end -->
+
+<!-- Property overview section-->
+<section class="property-overview-section spad pb-0">
+	<div class="container">
+		<div class="row">
+			<div class="col-lg-6">
+				<div class="property-overview-text">
+					<h4>DETALLES GENERALES</h4>
+					<p>De 9 pisos, con acceso desde avenida Blanco Encalada y calle Domeyko, cuenta con espacios comunes de primer nivel y paisajismo en sus zonas exteriores para disfrutar junto a la familia y amigos.
+					</p>
+				</div>
+			</div>
+			<div class="col-lg-6">
+				<div class="property-overview-text">
+					<h4>SERVICIOS CERCANOS</h4>
+					<ul>
+						<li>Estaciones de metro.</li>
+						<li>Colegios.</li>
+						<li>Universidades.</li>
+						<li>Supermercados.</li>
+						<li>Carabineros.</li>
+						<li>Áreas verdes y lugares emblemáticos de la ciudad, como el Parque O´Higgins.</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="container-fluid pt-5">
+		<div class="row">
+			<div class="col-lg-6 p-0">
+				{% load static %}
+				<img src="{% static 'images/ecoencalada/6.jpg' %}" alt="">
+			</div>
+			<div class="col-lg-6 p-0 d-flex align-items-center justify-content-center">
+				<div class="property-text-warp">
+					<div class="property-overview-text">
+						<h4>¿QUÉ POSEE CADA VIVIENDA?</h4>
+						<p>El departamento cuenta con dos dormitorios, uno matrimonial y otro individual. Posee living, comedor, cocina y tiene dos baños.</p>
+					</div>
+				</div>
+			</div>
+			<div class="col-lg-6 p-0 d-flex align-items-center justify-content-center order-2 order-lg-1">
+				<div class="property-text-warp">
+					<div class="property-overview-text">
+						<h4>ADICIONALMENTE</h4>
+						<p>El edificio cuenta con un hall de doble altura, 2 salones multiuso, salón gourmet, sala de estudio, de niños y de juegos con cocina-bar. También lounge tv, gimnasio y piscina con sala de primeros auxilios y baños.
+						</p>
+					</div>
+				</div>
+			</div>
+			<div class="col-lg-6 p-0 order-1 order-lg-2">
+				{% load static %}
+				<img src="{% static 'images/ecoencalada/7.jpg' %}" alt="">
+			</div>
+		</div>
+	</div>
+</section>
+
+<!-- Contactar-->
+<section class="contact-section">
+	<div class="container">
+		<div class="row">
+			<div class="col-lg-7 offset-lg-3">
+				<div class="contact-info-box-propiedad">
+					<h5 class="contact-title">SALA DE VENTAS</h5>
+					<div class="contact-info">
+						<div class="ci-item">
+							{% load static %}
+							<img src="{% static 'images/icons/location.png' %}" class="ci-icon" alt="">
+							<p>Blanco Encalada 2521, Santiago, Reg. Metropolitana.</p>
+						</div>
+						<div class="ci-item">
+							{% load static %}
+							<img src="{% static 'images/icons/headphone.png' %}" class="ci-icon" alt="">
+							<p>(56) 9 42939102<br>(56) 9 53573821</p>
+						</div>
+					</div>
+					<h5 class="contact-title">¿Deseas comprar un departamento y hacerlo tu hogar?<br>Rellena los datos y nos pondremos en contacto contigo.</h5>
+					<form class="contact-form" name="datosEcoEncalada" method="post" action="envia.html">
+						<div class="form-field">
+							{% load static %}
+							<img src="{% static 'images/icons/usuario.png' %}" alt="" >
+							<input id="nombre" type="text" placeholder="Nombre completo" required>
+						</div>
+						<div class="form-field">
+							{% load static %}	
+							<img src="{% static 'images/icons/rut.png' %}" alt="" >
+							<input id="rut" type="text" pattern="[0-9]{2}.[0-9]{3}.[0-9]{3}-[0-9Kk]{1}" placeholder="Rut. Ej: 12.345.678-k" required>
+						</div>
+						<div class="form-field">
+							{% load static %}
+							<img src="{% static 'images/icons/numero.jpg' %}" alt="" >
+							<input id="numero" type="tel" pattern="9[0-9]{8}" placeholder="Número celular. Ej: 911223344" required>
+						</div>
+						<div class="form-field">
+							{% load static %}
+							<img src="{% static 'images/icons/correo.png' %}" alt="" >
+							<input id="correo" type="email" placeholder="Correo electrónico" required>
+						</div>
+						<div class="form-field">
+							{% load static %}
+							<img src="{% static 'images/icons/casa.png' %}" alt="" >
+							<select class="fieldSelect">
+									<option id="EcoEncalada" value="EcoEncalada">Eco Encalada</option>
+							</select><br>
+						</div>
+						<button id="enviar" type="submit" onmouseover="Destacar()" class="site-btn">Enviar</button>
+						<button id="limpiar" type="button" onmouseover="Destacar()" onclick="ConfirmarLimpiarEcoEncalada()" class="site-btn-limpiar">Limpiar</button>
+					</form>
+					<div class="div-mapa">
+						<button class="boton-mapa" onmouseover="Destacar()" id="mostrarocultar">Mostrar / Ocultar mapa</button>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+<!--Fin contactar-->
+<!-- Mapa -->
+<section class="section-map" id="mapa">
+	<div class="map">
+		<iframe src="https://www.google.com/maps/embed/v1/place?q=place_id:ChIJE2Hwbf3EYpYRJL0AC_rgx18&key=AIzaSyDqVUrexZ4Rjwlro_LY6vBtDDTMPkBv_hg" style="border:0"></iframe>
+	</div>
+</section>
+{% endblock %}

@@ -13,33 +13,21 @@
 	<!-- Google font -->
 	<link href="https://fonts.googleapis.com/css?family=Sarabun:300,300i,400,400i,500,500i,600,600i,700,700i&display=swap" rel="stylesheet">
 
-	<!-- Scripts -->
-	{% load static %}
-	<script src="{% static 'js/jquery-3.2.1.min.js' %}"></script>
-	{% load static %}
-	<script src="{% static 'js/bootstrap.min.js' %}"></script>
-	{% load static %}
-	<script src="{% static 'js/owl.carousel.min.js' %}"></script>
-	{% load static %}
-	<script src="{% static 'js/jquery.magnific-popup.min.js' %}"></script>
-	{% load static %}
-	<script src="{% static 'js/main.js' %}"></script>
-	{% load static %}
-	<script src="{% static 'js/funciones.js' %}"></script>
-
+	
+	
 	<!-- Add additional CSS in static file -->
 	{% load static %}
-	<link rel="stylesheet" href="{% static 'css/bootstrap.min.css' %}"/>
+	<link rel="stylesheet" type="text/css" href="{% static 'css/bootstrap.min.css' %}"/>
 	{% load static %}
-	<link rel="stylesheet" href="{% static 'css/font-awesome.min.css' %}"/>
+	<link rel="stylesheet" type="text/css" href="{% static 'css/font-awesome.min.css' %}"/>
 	{% load static %}
-	<link rel="stylesheet" href="{% static 'css/flaticon.css' %}"/>
+	<link rel="stylesheet" type="text/css" href="{% static 'css/flaticon.css' %}"/>
 	{% load static %}
-	<link rel="stylesheet" href="{% static 'css/magnific-popup.css' %}"/>
+	<link rel="stylesheet" type="text/css" href="{% static 'css/magnific-popup.css' %}"/>
 	{% load static %}
-	<link rel="stylesheet" href="{% static 'css/owl.carousel.min.css' %}"/>
+	<link rel="stylesheet" type="text/css" href="{% static 'css/owl.carousel.min.css' %}"/>
 	{% load static %}
-	<link rel="stylesheet" href="{% static 'css/styles.css' %}"/>
+	<link rel="stylesheet" type="text/css" href="{% static 'css/styles.css' %}"/>
 </head>
 
 <body>
@@ -64,7 +52,23 @@
 		</div>
   	</header>
   	{% block content %}
-
+		{% block pagination %}
+			{% if is_paginated %}
+			<div class="pagination">
+			<span class="page-links">
+			{% if page_obj.has_previous %}
+			<a href="{{ request.path }}?page={{ page_obj.previous_page_number }}">previous</a>
+			{% endif %}
+			<span class="page-current">
+			Page {{ page_obj.number }} of {{ page_obj.paginator.num_pages }}.
+			</span>
+			{% if page_obj.has_next %}
+			<a href="{{ request.path }}?page={{ page_obj.next_page_number }}">next</a>
+			{% endif %}
+			</span>
+			</div>
+			{% endif %}
+		{% endblock %}
 	{% endblock %}
 	<!-- Footer section -->
 		<footer class="footer-section">
@@ -107,5 +111,20 @@
 			</div>
 		</footer>
 	<!-- Footer section end-->
+	<!-- Scripts -->
+	{% load static %}
+	<script type='text/javascript' src="{% static 'js/jquery-3.2.1.min.js' %}"></script>
+	{% load static %}
+	<script type='text/javascript' src="{% static 'js/bootstrap.min.js' %}"></script>
+	{% load static %}
+	<script type='text/javascript' src="{% static 'js/owl.carousel.min.js' %}"></script>
+	{% load static %}
+	<script type='text/javascript' src="{% static 'js/jquery.magnific-popup.min.js' %}"></script>
+	{% load static %}
+	<script type='text/javascript' src="{% static 'js/main.js' %}"></script>
+	{% load static %}
+	<script type='text/javascript' src="{% static 'js/funciones.js' %}"></script>
+	{% load static %}
+	<script type='text/javascript' src="{% static 'js/circle-progress.min.js' %}"></script>
 </body>
 </html>
