@@ -4,7 +4,7 @@ Sebastián Silva.
 Diego Zapata.
 
 Usuario: admin
-Contraseña: duoc
+Contraseña: duoc1234
 Entorno virtual: django_urbansa
 
 URL ADMIN: http://127.0.0.1:8000/admin/

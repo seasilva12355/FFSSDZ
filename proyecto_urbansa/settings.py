@@ -131,3 +131,9 @@ STATICFILES_FINDERS = (
     'django.contrib.staticfiles.finders.AppDirectoriesFinder',
 #    'django.contrib.staticfiles.finders.DefaultStorageFinder',
 )
+
+LOGIN_REDIRECT_URL	=	'/departamentos/'
+LOGOUT_REDIRECT_URL = '/departamentos/'
+
+EMAIL_BACKEND	=	'django.core.mail.backends.console.EmailBackend'
+EMAIL_FILE_PATH = os.path.join(BASE_DIR, "sent_emails")

@@ -16,6 +16,7 @@ urlpatterns = [
     path('departamentosinstances/', views.DepartamentoInstanceListView.as_view(), name='departamentosinstances'),
     path('departamentos/', views.DepartamentoListView.as_view(), name='departamentos'),
     path('clientes/', views.ClienteListView.as_view(), name='clientes'),
+    path('signup/', views.SignUp.as_view(), name='signup'),
     #path(r'^departamentos/', views.DepartamentoListView.as_view(), name='departamentos'),
     
 ]

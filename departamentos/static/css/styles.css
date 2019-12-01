@@ -906,6 +906,30 @@ Ids forms
 	border: none;
 	border-bottom: 1px solid #dadcde;
 }
+#id_username{
+	font-size: 14px;
+	color: #73778e;
+	font-weight: 300;
+	padding: 0 20px 10px 40px;
+	max-width: 100%;
+	width: 100%;
+	height: 44px;
+	margin-bottom: 20px;
+	border: none;
+	border-bottom: 1px solid #dadcde;
+}
+#id_password{
+	font-size: 14px;
+	color: #73778e;
+	font-weight: 300;
+	padding: 0 20px 10px 40px;
+	max-width: 100%;
+	width: 100%;
+	height: 44px;
+	margin-bottom: 20px;
+	border: none;
+	border-bottom: 1px solid #dadcde;
+}
 #id_nombre_completo{
 	font-size: 14px;
 	color: #73778e;

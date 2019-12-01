@@ -1,0 +1,39 @@
+{% extends 'base_generic.html' %}
+
+{% block content %}
+<!-- Page top section -->
+{% load static %}
+<section class="page-top-section set-bg" data-setbg="{% static 'images/page-top-bg/4.jpg' %}">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-5">
+                <div class="page-top-text text-white">
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- Page top section end -->
+
+<section class="contact-section">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 offset-lg-4">
+                <div class="contact-info-box-crud">
+                    <form action="" method="POST" class="contact-form">
+                            <h5 class="contact-title">CREAR CUENTA</h5>
+                            {% csrf_token %}
+                            {{ form.as_p }}
+                            <div>
+                                <button id="enviar" type="submit" onmouseover="Destacar()" class="site-btn">Ingresar</button>
+                                <button id="limpiar" type="button" onmouseover="Destacar()" onclick="ConfirmarLimpiarEcoArauco()" class="site-btn-limpiar">Limpiar</button>
+                            </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+{% endblock %}

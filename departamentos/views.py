@@ -3,6 +3,8 @@ from django.views.generic.edit import CreateView, UpdateView, DeleteView
 from django.urls import reverse_lazy
 from .models import Cliente, Departamento, DepartamentoInstance
 from django.views import generic
+from django.contrib.auth.models import User
+from .forms import UserCreationForm
 
 # Create your views here.
 class ClienteListView(generic.ListView):
@@ -62,7 +64,10 @@ class DepartamentoInstanceListView(generic.ListView):
     model = DepartamentoInstance
     paginate_by = 10
 
-
+class SignUp(generic.CreateView):
+    form_class = UserCreationForm
+    success_url = reverse_lazy('login')
+    template_name = 'signup.html'
 
 def index(request):
     num_clientes= Cliente.objects.all().count()
