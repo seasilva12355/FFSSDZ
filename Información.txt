@@ -9,12 +9,15 @@ seasilva12355
 Diegozapata-afk
 
 Link PythonAnywhere:
-No existe, daba error en collectstatic y durante toda la semana no logramos arreglarlo.
+http://felipebastianfuentesvega.pythonanywhere.com/departamentos/
 
 Usuario Admin: admin
 Contraseña: duoc1234
 
 Usuario Normal: UsuarioUrbanSA
+Contraseña: duoc1234
+
+Usuario Admin PythonAnywhere: adminurbansa
 Contraseña: duoc1234
 
 Entorno virtual: django_urbansa
