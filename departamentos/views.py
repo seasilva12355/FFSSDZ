@@ -192,3 +192,10 @@ def departamentoinstance_detail_view(request,pk):
         'departamentos/departamentoinstance_detail.html',
         context={'departamentoinstance':id,}
     )
+
+def password_reset_view(request):
+    
+    return render(
+        request,
+        'password_reset.html'
+    )

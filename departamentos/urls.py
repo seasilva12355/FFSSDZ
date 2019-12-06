@@ -30,4 +30,5 @@ urlpatterns += [
     path('departamento/create/', views.DepartamentoCreate.as_view(), name='departamento_create'),
     path('departamento/<str:pk>/update/', views.DepartamentoUpdate.as_view(), name='departamento_update'),
     path('departamento/<str:pk>/delete/', views.DepartamentoDelete.as_view(), name='departamento_delete'),
+    
 ]

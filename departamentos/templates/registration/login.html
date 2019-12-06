@@ -1,0 +1,62 @@
+{% extends 'base_generic.html' %}
+
+{% block content %}
+<!-- Page top section -->
+{% load static %}
+<section class="page-top-section set-bg" data-setbg="{% static 'images/page-top-bg/4.jpg' %}">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-5">
+                <div class="page-top-text text-white">
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- Page top section end -->
+
+<section class="contact-section">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-7 offset-lg-4">
+                <div class="contact-info-box-crud">
+                    {% if form.errors %}
+                        <p>Su usuario y contraseña no coinciden. Inténtelo nuevamente.</p>
+                    {% endif %}
+                    {% if next %}
+                        {% if user.is_authenticated %}
+                            <p>Tu cuenta no tiene acceso a esta página. Por favor proceda con una cuenta que tenga los permisos necesarios.</p>
+                        {% else %}
+                            <p>Por favor inicie sesión para acceder a esta página.</p>
+                        {% endif %}
+                    {% endif %}
+                    <form action="" method="POST" class="contact-form">
+                            <h5 class="contact-title">INICIAR SESIÓN</h5>
+                            {% csrf_token %}
+                            <div>
+                                <td><p>Usuario:</p></td>
+                                <td>{{form.username}}</td>
+                            </div>
+                            
+                            <div>
+                                <td><p>Contraseña:</p></td>
+                                <td>{{form.password}}</td>
+                            </div>
+                            <br>
+                            <div>
+                                <button id="enviar" type="submit" onmouseover="Destacar()" class="site-btn">Ingresar</button>
+                                <button id="limpiar" type="button" onmouseover="Destacar()" onclick="ConfirmarLimpiarEcoArauco()" class="site-btn-limpiar">Limpiar</button>
+                            </div>
+                    </form>
+                    {# Asumir que se configuró el reseteo del password en tu URLconf #}
+                    <br>
+                    <p><a href="{% url 'signup' %}">Registrate aquí</a></p>
+                    <p><a href="{% url 'password_reset' %}">¿Olvidaste tu contraseña?</a></p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+{% endblock %}
